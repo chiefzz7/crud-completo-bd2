@@ -4,6 +4,7 @@ include_once('conexao.php');
 
 $id = $_GET['id'];
 
+
 $query = $pdo->query("SELECT * from turismo where id = '$id'");
 
  $res = $query->fetchAll(PDO::FETCH_ASSOC);
